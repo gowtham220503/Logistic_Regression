@@ -1,17 +1,10 @@
-import streamlit as st
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.pipeline import Pipeline
 
-st.title('My First Streamlit App') 
-# Add a welcome message 
-st.write('Welcome to my Streamlit app!') 
-# Create a text input 
-widgetuser_input = st.text_input('Enter a custom message:', 'Hello, Streamlit!') 
-# Display the customized message 
-st.write('Customized Message:', user_input)
 df = pd.read_csv("diabetes.csv")
 
 #Data Exploration
